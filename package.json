@@ -3,16 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "twilio": "^3.43.0",
     "twilio-client": "^1.10.3"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "src/app.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MarioBushra/node-api.git"
