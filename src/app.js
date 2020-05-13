@@ -29,7 +29,7 @@ app.post("/order", (req, res) => {
     newOrder.phoneNumber +
     "\n" +
     "here's his/her order { " +
-    newOrder +
+    newOrder.order +
     " }";
 
   client.messages
