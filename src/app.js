@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  console.log("Welcome to my node-api");
+  res.send("Welcome to my node-api");
 });
 
 app.post("/order", (req, res) => {
