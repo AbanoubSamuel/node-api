@@ -36,7 +36,7 @@ app.post("/order", (req, res) => {
     .create({
       from: "whatsapp:+14155238886",
       body: bodyMessage.toString(),
-      to: "whatsapp:+201111267295",
+      to: "whatsapp:+201207606621",
     })
     .then((message) => {
       res.send(200);
