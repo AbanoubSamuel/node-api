@@ -6,6 +6,7 @@ const authToken = "885b3e4818db378ad07c5854f3ee78c0";
 const client = require("twilio")(accountSid, authToken);
 
 app.use(bodyParser.json());
+const port = process.env.PORT || 3000;
 
 app.post("/order", (req, res) => {
   console.log(req.body);
@@ -38,6 +39,6 @@ app.post("/order", (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-  console.log("Listening on port 3000...");
+app.listen(port, () => {
+  console.log("Listening on port " + port);
 });
